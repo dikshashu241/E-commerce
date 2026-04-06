@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cart Premium</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<h2>Durg-Cart</h2>
+<div class="cart-btn" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</div>
+</header>
+
+<div class="container" id="store">
+<div class="controls">
+<input type="text" id="search" placeholder="Search products...">
+<select id="category">
+<option value="all">All</option>
+<option value="electronics">Electronics</option>
+<option value="fashion">Fashion</option>
+<option value="grocery">Groceries</option>
+</select>
+</div>
+<div class="grid" id="products"></div>
+</div>
+
+<div class="cart" id="cart"></div>
+
+<div class="success" id="success">
+<h2>🎉 Order Confirmed!</h2>
+<p>Thank you for shopping with us ❤️</p>
+<p>Your Order ID:</p>
+<h3>#RTS-ORD-2026</h3>
+<p>Payment: <span id="payment-method"></span></p>
+<button onclick="goHome()">Continue Shopping</button>
+</div>
+<script src="script.js"></script>
+<div class="overlay" id="overlay" onclick="toggleCart()"></div>
+</body>
+</html>
